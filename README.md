@@ -1,4 +1,4 @@
-# Swing-Data-Challenge
+# Swing-Data-Challenge(Java and Spring)
 Coding Challenge with Spring 
 
 Columns timestamp, ax, ay, az, wx, wy, wz. 
