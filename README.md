@@ -21,3 +21,4 @@ Function searchContinuityAboveValueTwoSignals takes in 2 columns strings that wi
 
 Function searchMultiContinuityWithinRange takes in a string for the colulmm to be searched. This column is searched in the provided indexBegin to IndexEnd for values that fall between thresholdHi and thresholdLo. All continuous areas that meet this requirement are returned as an ascending  hashmap in the form <Integer, Integer> with the first value being the start of a region and the second the end of a region. 
 
+Function Tests shows examples of functions being used with Spring 
