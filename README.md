@@ -8,7 +8,7 @@ In class DataAccessService:
 
 Function ReadData takes a path of the the csv file and the file is then parsed into a Hashmap. The Hashmap uses the format of <Integer, double[]>. Integer represents the rows of the csv file and matches theses rows directly. Double[] is an array that holds the 7 columns of data for one row. These are the same columns as described above in the  same order as in the csv file.
 
-Class dataFunctions are the functions to be performed on the database. This will service Spring implements to perform querying functions on the data from the DataAccessService.
+Class dataFunctions are the functions to be performed on the database. This will be a  Spring service to perform querying functions on the data from the DataAccessService.
 In class dataFunctions: 
 
 Function colMatch is used to take in the column labels from other functions. This takes in a string column label such as timestamp and converts it to a number that timestamp is indexed at in the csv data. Timestamp is column 0 in the csv as such it returns 0 when passed. If a value is passed that does not match any of the columns in csv -1 is returned. 
