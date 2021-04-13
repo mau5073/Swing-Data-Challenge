@@ -6,7 +6,7 @@ Columns timestamp, ax, ay, az, wx, wy, wz.
 Class DataAccessService acts as the file reader and holds the projects database. 
 In class DataAccessService:
 
-Function ReadData a path the the csv file is taken in and the file is then parsed into a Hashmap. The Hashmap uses the format of <Integer, double[]>. Integer represents the rows of the csv file and matches theses rows directly. Double[] is an array that holds the 7 columns of data for one row. These are the same columns as described above in the  same order as in the csv file.
+Function ReadData takes a path of the the csv file is taken in and the file is then parsed into a Hashmap. The Hashmap uses the format of <Integer, double[]>. Integer represents the rows of the csv file and matches theses rows directly. Double[] is an array that holds the 7 columns of data for one row. These are the same columns as described above in the  same order as in the csv file.
 
 Class dataFunctions are the functions to be performed on the database. This will service Spring implements to perform querying functions on the data from the DataAccessService.
 In class dataFunctions: 
