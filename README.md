@@ -11,6 +11,10 @@ Function ReadData takes a path of the the csv file and the file is then parsed i
 Class dataFunctions are the functions to be performed on the database. This will be a  Spring service to perform querying functions on the data from the DataAccessService.
 In class dataFunctions: 
 
+Class params holds all possible parameters  a function could take this is used with the helper class 
+
+Class HelperClass takes in data of generic type to be used in a function. Also holds a lambda expression to preform searching inside the main functions. 
+
 Function searchContinuityAboveValue takes an int (0-6) representing  the column to be searched. It also takes in an integer for the first index and last index. A double is taken in for threshold as the values it will be used to compare to are decimal values. The final value is the number of continuous cells that must  be above threshold before an index is returned. If no such area exists -1 is returned.
 
 Function backSearchContinuityWithinRange takes in similar values to the previous function. The changes from the previous function is that IndexBegin must be larger than IndexEnd. This function performs a backwards search starting from a higher index to the lower returning the first index that a continuous  winLength number of cells have been between a low and high threshold. If no such area exists -1 is returned.
