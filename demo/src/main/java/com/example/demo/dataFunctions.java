@@ -64,7 +64,7 @@ public class dataFunctions {
          * This function deals with helping the main functions
          *
          * @param xx - data to be used in function
-         * @param hg - this is a lambda expression. It will be defined withing the function and return what is needed for that function
+         * @param hg - this is a lambda expression. It will be defined within the function and return what is needed for that function
          * @return - returns a class object of params
          */
         public static <T> params helpermethod(T xx, HelperGen<T> hg) {
