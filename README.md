@@ -1,8 +1,11 @@
-# Swing-Data-Challenge(Java and Spring)
-Coding Challenge with Spring 
+# Swing-Data-Challenge Backend(Java-Spring-JUNIT) Front-end(React JS- Axios)
+Coding Challenge to store and analyze data captured and stored in a csv file
+
+The original directions are provided in  a pdf file named data swing challenge 
 
 Columns timestamp, ax, ay, az, wx, wy, wz. 
 
+Java:
 Class DataAccessService acts as the file reader and holds the projects database. 
 In class DataAccessService:
 
@@ -24,3 +27,7 @@ Function searchContinuityAboveValueTwoSignals takes in 2 columns strings that  m
 Function searchMultiContinuityWithinRange takes in a string for the colulmm to be searched. This column is searched in the provided indexBegin to indexEnd for values that fall between thresholdHi and thresholdLo. All continuous areas that meet this requirement are returned as an ascending  hashmap in the form <Integer, Integer> with the first value being the start of a region and the second the end of a region. 
 
 Function Tests in dataFunctionTests performs jUnit testing on each of these funtions 
+
+React:
+Each page is used to use the functions described above through a series of forms in the user interface. A field is provided for each needed parameter.
+Axios sends the entered form data to spring to connect with the function endpoints in Java then displays the result from the selected function. 
