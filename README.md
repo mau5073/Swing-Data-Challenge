@@ -1,7 +1,7 @@
 # Swing-Data-Challenge Backend(Java-Spring-JUNIT) Front-end(React JS- Axios)
 Coding Challenge to store and analyze data captured and stored in a csv file
 
-The original directions are provided in  a pdf file named data swing challenge 
+The original directions are provided in  a pdf file named data swing coding  challenge pdf
 
 Columns timestamp, ax, ay, az, wx, wy, wz. 
 
