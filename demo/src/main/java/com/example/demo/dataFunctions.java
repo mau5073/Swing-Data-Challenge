@@ -81,7 +81,7 @@ public class dataFunctions {
             params search(G x);
         }
     }
-
+@CrossOrigin(origins =  "http://localhost:5000 ")
 @GetMapping("/searchContinuityAboveValue")
 @ResponseBody
     /**
@@ -143,6 +143,7 @@ public class dataFunctions {
      * @param winLength - int for number of times a continuous area must meet criteria
      * @return - returns an integer for the index that meets the criteria
      */
+    @CrossOrigin(origins =  "http://localhost:5000 ")
     @GetMapping("/backSearchContinuityWithinRange")
     @ResponseBody
      int backSearchContinuityWithinRange(@RequestParam(name = "data")int data,@RequestParam(name = "indexBegin") int indexBegin,
@@ -196,6 +197,7 @@ public class dataFunctions {
      * @param winLength - int for number of times a continuous area must meet criteria
      * @return - returns an integer for the index that meets the criteria
      */
+    @CrossOrigin(origins =  "http://localhost:5000 ")
     @GetMapping("/searchContinuityAboveValueTwoSignals")
     @ResponseBody
     static int  searchContinuityAboveValueTwoSignals(@RequestParam(name = "data1") int data1, @RequestParam(name = "data2") int data2,
@@ -253,6 +255,7 @@ public class dataFunctions {
      * @param winLength - int for number of times a continuous area must meet criteria
      * @return - returns a map containing index areas from start to end that were greater than the set threshold for at least winLength times
      */
+    @CrossOrigin(origins =  "http://localhost:5000 ")
     @GetMapping("/searchMultiContinuityWithinRange")
     @ResponseBody
     static Map<Integer, Integer> searchMultiContinuityWithinRange(@RequestParam(name = "data")int data,@RequestParam(name = "indexBegin") int indexBegin,
